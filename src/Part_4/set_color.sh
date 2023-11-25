@@ -1,0 +1,37 @@
+#!/bin/bash
+
+BACKGROUND_WHITE='\033[47m'
+BACKGROUND_RED='\033[41m'
+BACKGROUND_GREEN='\033[42m'
+BACKGROUND_BLUE='\033[46m'
+BACKGROUND_PURPLE='\033[45m'
+BACKGROUND_BLACK='\033[40m'
+
+FONT_WHITE='\033[37m'
+FONT_RED='\033[31m'
+FONT_GREEN='\033[32m'
+FONT_BLUE='\033[36m'
+FONT_PURPLE='\033[35m'
+FONT_BLACK='\033[30m'
+
+DEFAULT='\033[0m'
+
+case "$1" in
+0) echo -en $DEFAULT;;
+1) echo -en $BACKGROUND_WHITE;;
+2) echo -en $BACKGROUND_RED;;
+3) echo -en $BACKGROUND_GREEN;;
+4) echo -en $BACKGROUND_BLUE;;
+5) echo -en $BACKGROUND_PURPLE;;
+6) echo -en $BACKGROUND_BLACK;;
+esac
+
+case "$2" in
+0) echo -en $DEFAULT;;
+1) echo -en $FONT_WHITE;;
+2) echo -en $FONT_RED;;
+3) echo -en $FONT_GREEN;;
+4) echo -en $FONT_BLUE;;
+5) echo -en $FONT_PURPLE;;
+6) echo -en $FONT_BLACK;;
+esac
